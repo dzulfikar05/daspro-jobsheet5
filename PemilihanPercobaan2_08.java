@@ -16,6 +16,24 @@ public class PemilihanPercobaan2_08 {
         
         String message = total < 65 ? "Remidi" : "Tidak remidi";
 
-        System.out.println("Nilai akhir = " + total + " sehingga " + message);
+        String huruf ="";
+
+        if(80 < total){
+            huruf = "A";
+        }else if(73 < total ){
+            huruf = "B+";
+        }else if(65 < total ){
+            huruf = "B";
+        }else if(60 < total ){
+            huruf = "C+";
+        }else if(50 < total ){
+            huruf = "C";
+        }else if(39 < total ){
+            huruf = "D";
+        }else if(total<= 39 ){
+            huruf = "E";
+        }
+
+        System.out.println("Nilai akhir = " + total + " dengan nilai huruf "+ huruf+" sehingga " + message);
     }
 }
